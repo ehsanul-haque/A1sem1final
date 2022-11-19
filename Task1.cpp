@@ -20,13 +20,17 @@ int permutation(int n, int r)
 int main()
 {
     int num;
+    cout << "Enter a number ";
     cin >> num;
     cout << "Factorial of " << num << " is " << fact(num) << endl;
 
     int n, r;
-    cin >> n, r;
-    cout << combination(n, r);
-    cout << permutation(n, r);
+    cout << "Enter n ";
+    cin >> n;
+    cout << "Enter r ";
+    cin >> r;
+    cout << "combination " << combination(n, r) << endl;
+    cout << "permutation " << permutation(n, r) << endl;
 
     return 0;
 }
