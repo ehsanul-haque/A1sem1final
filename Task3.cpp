@@ -17,9 +17,13 @@ int Lcm(int a, int b)
 {
     int lcm;
     if (a > b)
+
         lcm = a;
+
     else
+
         lcm = b;
+
     while (1)
     {
         if (lcm % a == 0 && lcm % b == 0)
@@ -33,8 +37,12 @@ int Lcm(int a, int b)
 
 int main()
 {
-    cout << Gcd(10,20);
-    
-    cout << Lcm(10,20);
+    int a, b;
+    cout << "Input 2 numbers ";
+    cin >> a >> b;
+
+    cout << "GCD of the 2 numbers is " << Gcd(a, b) << endl;
+
+    cout << "LCM of the 2 numbers is " << Lcm(a, b) << endl;
     return 0;
 }
